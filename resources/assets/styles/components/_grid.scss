@@ -6,6 +6,10 @@
   }
 }
 
+.grid--gutters > .grid--item {
+  margin: 0 1em;
+}
+
 .grid--row {
   flex-direction: row;
 }

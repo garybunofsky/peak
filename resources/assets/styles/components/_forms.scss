@@ -3,9 +3,9 @@
   @extend .form-inline;
 }
 
-.search-form label {
-  @extend .form-group;
-
+label {
+  color: $blue--500;
+  font-weight: 700;
   font-weight: normal;
 }
 
@@ -16,4 +16,16 @@
 .search-form .search-submit {
   @extend .btn;
   @extend .btn-secondary;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  border: 1px solid $gray--400;
+  border-radius: 5px;
+}
+
+input {
+  padding: 0.5em 0.25em;
 }
