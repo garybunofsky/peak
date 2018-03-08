@@ -1,4 +1,33 @@
 footer {
-  background-color: $blue;
+  background-color: $blue--700;
   padding: 3em;
+  color: $white;
+
+  .grid {
+    display: flex;
+    flex-direction: row;
+
+    div {
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 0 1em -2.5em;
+
+    li {
+      line-height: 1.75em;
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: $white;
+          opacity: 0.8;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

@@ -1,5 +1,5 @@
 <footer class="content-info">
-  <div class="container">
+  <div class="grid">
     @php(dynamic_sidebar('sidebar-footer'))
     <div class="">
       <h5>About Us</h5>
