@@ -1,0 +1,18 @@
+.callout-section {
+  background: $gray--200;
+  border: 1px solid $gray--300;
+  text-align: center;
+
+  .grid--item {
+    padding: 8em 2em;
+  }
+
+  .grid--item:first-child {
+    border-right: 1px solid $gray--300;
+  }
+
+  h5,
+  p {
+    color: $gray-500;
+  }
+}
