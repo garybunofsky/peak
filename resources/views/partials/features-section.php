@@ -1,4 +1,4 @@
-<div class="grid grid--gutters features-section">
+<div class="grid container grid--gutters features-section">
   <div class="grid--item">
     <img src="/wp-content/uploads/2018/03/ruler.svg" alt="">
     <h3>Duis Aute Irure</h3>
