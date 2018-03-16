@@ -13,6 +13,7 @@
 
 /** Import theme styles */
 @import "common/global";
+@import "common/reset";
 @import "common/text";
 @import "components/buttons";
 @import "components/comments";
@@ -20,6 +21,7 @@
 @import "components/features-section";
 @import "components/forms";
 @import "components/grid";
+@import "components/nav";
 @import "components/wp-classes";
 @import "layouts/header";
 @import "layouts/sidebar";
