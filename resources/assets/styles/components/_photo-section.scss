@@ -1,0 +1,23 @@
+.photo-section {
+  background: $blue--600;
+  padding: 8em 1em 5em 1em;
+  text-align: center;
+
+  .content {
+    margin: 0 auto;
+  }
+
+  h2,
+  h4 {
+    color: $white;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .photo-section {
+    .content {
+      margin: 0 auto;
+      width: 33%;
+    }
+  }
+}
