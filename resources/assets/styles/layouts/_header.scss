@@ -5,3 +5,84 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.navbar {
+  padding: 0.5rem 0;
+
+  .navbar-toggler {
+    color: $white;
+    background: $blue--500;
+  }
+}
+
+.banner {
+  a.brand {
+    display: inline-block;
+    width: 15%;
+
+    img {
+      height: auto;
+      max-width: 108px;
+      width: 100%;
+    }
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+
+  nav.nav-primary {
+    .menu-primary-navigation-container {
+      width: 100%;
+      background: $blue--600;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        max-width: 960px;
+        margin: 0 auto;
+
+        li {
+          a {
+            background: $blue--600;
+            color: $white;
+            padding: 1rem 0.5rem;
+            text-align: center;
+
+            &:hover {
+              background: $blue--500;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 992px) {
+  .banner {
+    .brand {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+
+      img {
+        margin: -1.25em 0;
+      }
+    }
+
+    nav.nav-primary {
+      .menu-primary-navigation-container {
+        ul {
+          flex-direction: row;
+
+          li {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}
