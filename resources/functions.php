@@ -77,11 +77,55 @@ array_map(function ($file) use ($sage_error) {
  * ├── STYLESHEETPATH         -> /srv/www/example.com/current/web/app/themes/sage/resources/views
  * └── TEMPLATEPATH           -> /srv/www/example.com/current/web/app/themes/sage/resources
  */
+function footer_init() {
+  register_sidebar(array(
+    'name' => __('1st Footer Column', ''),
+    'id' => 'first-footer-widget-area',
+    'description' => __('The first footer section', ''),
+    'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h5>',
+    'after_title' => '</h5>',
+  ));
+
+  register_sidebar(array(
+    'name' => __('2nd Footer Column', ''),
+    'id' => 'second-footer-widget-area',
+    'description' => __('The second footer section', ''),
+    'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h5>',
+    'after_title' => '</h5>',
+  ) );
+
+  register_sidebar(array(
+    'name' => __('3rd Footer Column', ''),
+    'id' => 'third-footer-widget-area',
+    'description' => __('The third footer section', ''),
+    'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h5>',
+    'after_title' => '</h5>',
+  ));
+
+  register_sidebar(array(
+    'name' => __('4th Footer Column', ''),
+    'id' => 'fourth-footer-widget-area',
+    'description' => __('The fourth footer section', ''),
+    'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h5>',
+    'after_title' => '</h5>',
+  ));
+}
+
 array_map(
     'add_filter',
     ['theme_file_path', 'theme_file_uri', 'parent_theme_file_path', 'parent_theme_file_uri'],
     array_fill(0, 4, 'dirname')
 );
+
+add_action( 'widgets_init', 'footer_init' );
 Container::getInstance()
     ->bindIf('config', function () {
         return new Config([
