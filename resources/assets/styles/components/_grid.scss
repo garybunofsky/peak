@@ -13,3 +13,13 @@
 .grid--row {
   flex-direction: row;
 }
+
+.grid--collapse {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  .grid--collapse {
+    flex-direction: row;
+  }
+}

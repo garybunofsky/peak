@@ -7,12 +7,25 @@
     padding: 8em 2em;
   }
 
+  .grid--gutters > .grid--item {
+    margin: 0;
+  }
+
   .grid--item:first-child {
-    border-right: 1px solid $gray--300;
+    border-bottom: 1px solid $gray--300;
   }
 
   h5,
   p {
     color: $gray-500;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .callout-section {
+    .grid--item:first-child {
+      border-right: 1px solid $gray--300;
+      border-bottom: 1px solid transparent;
+    }
   }
 }
