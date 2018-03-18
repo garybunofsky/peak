@@ -10,5 +10,7 @@
   @include('partials.callout-section')
   @while(have_posts()) @php(the_post())
     @include('partials.content-page')
+
   @endwhile
+  @include('partials.form-section')
 @endsection
