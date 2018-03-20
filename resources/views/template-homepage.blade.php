@@ -4,7 +4,7 @@
 
 @extends('layouts.app')
 @section('content')
-  @include('partials.page-header')
+  @include('partials.homepage-header')
   @include('partials.features-section')
   @include('partials.photo-section')
   @include('partials.callout-section')

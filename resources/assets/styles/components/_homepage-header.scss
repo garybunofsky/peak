@@ -1,0 +1,24 @@
+.homepage-header {
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 512px;
+  text-align: center;
+  padding: 40px 50px;
+  width: 100%;
+
+  h1 {
+    font-weight: 700;
+  }
+
+  h2 {
+    @include font-size(27);
+  }
+}
+
+@media all and (min-width: 992px) {
+  .header-text {
+    width: 50%;
+  }
+}
