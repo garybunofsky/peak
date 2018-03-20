@@ -21,7 +21,7 @@ $doc-line-height: 24;
   font-size: 1px + $size;
   font-size: $size / $doc-font-size +rem;
   letter-spacing: -0.015em;
-  line-height: ($doc-line-height / $size * 10000) / 10000;
+  line-height: ($doc-line-height / $size * 10000) / 8500;
   margin-bottom: 1px + $doc-line-height;
   margin-bottom: ($doc-line-height / $doc-font-size)+rem;
   text-rendering: optimizeLegibility;
