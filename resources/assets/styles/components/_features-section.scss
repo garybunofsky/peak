@@ -1,6 +1,12 @@
 .features-section {
   padding: 8em 0 6em 0;
 
+  img {
+    height: auto;
+    margin-bottom: 0.75em;
+    width: 24px;
+  }
+
   h4 {
     color: $blue--500;
     font-weight: 700;

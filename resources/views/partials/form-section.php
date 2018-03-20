@@ -1,5 +1,5 @@
 <div class="form-section">
-  <div class="text--center">
+  <div class="text--center text">
     <h5><?php the_field('quote_form_title'); ?></h5>
     <p><?php the_field('quote_form_body'); ?></p>
   </div>

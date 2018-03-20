@@ -13,3 +13,16 @@ $gray--400: #666;
 $gray--300: #bbb;
 $gray--200: #f1f3f5;
 $white: #fff;
+
+$doc-font-size: 16;
+$doc-line-height: 24;
+
+@mixin font-size($size) {
+  font-size: 1px + $size;
+  font-size: $size / $doc-font-size +rem;
+  letter-spacing: -0.015em;
+  line-height: ($doc-line-height / $size * 10000) / 10000;
+  margin-bottom: 1px + $doc-line-height;
+  margin-bottom: ($doc-line-height / $doc-font-size)+rem;
+  text-rendering: optimizeLegibility;
+}
