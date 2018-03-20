@@ -3,5 +3,9 @@
   <div class="header-text">
     <h1>{!! App::title() !!}</h1>
     <h2>Suscipit quaerendum ad, viris tacimates sea at. Et modo dictas omnesque has, eam persius labores.</h2>
+    <div class="form-box">
+      <input type="text" name="" value="" placeholder="Your Email Address">
+      <button class="button button--blue form-control large" type="button" name="button">Get a Quote </button>
+    </div>
   </div>
 </div>

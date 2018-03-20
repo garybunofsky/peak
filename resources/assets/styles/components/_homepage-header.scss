@@ -14,11 +14,41 @@
 
   h2 {
     @include font-size(27);
+
+    line-height: 1.25em;
+  }
+
+  .form-box {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px 10px 0;
+
+    input {
+      margin-bottom: 0.75em;
+    }
   }
 }
 
 @media all and (min-width: 992px) {
-  .header-text {
-    width: 50%;
+  .homepage-header {
+    .header-text {
+      width: 50%;
+    }
+
+    .form-box {
+      flex-direction: row;
+
+      input {
+        flex: 68%;
+        margin: 0 2% 0 0;
+      }
+
+      button {
+        flex: 29%;
+      }
+    }
   }
 }
