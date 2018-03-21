@@ -1,7 +1,7 @@
 <div class="grid photo-section">
   <div class="content">
-    <h2>Want a free, no-obligations quote?</h2>
-    <h4>Graeci blandit maiestatis ei sit, mei at albucius epicurei, vel corrumpit torquatos. </h4>
+    <h2><?php the_field('photo_bar_title'); ?></h2>
+    <h4><?php the_field('photo_bar_body'); ?></h4>
     <a href="#" class="button button--white button--xl">Get a Quote →</a>
   </div>
 </div>
