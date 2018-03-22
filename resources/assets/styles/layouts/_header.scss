@@ -7,17 +7,25 @@
 }
 
 .navbar {
+  margin-top: -4em;
   padding: 0.5rem 0 0 0;
 
   .navbar-toggler {
     color: $white;
-    background: $blue--500;
+    background: $white;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url('../images/menu.svg');
+    background-size: 1.25em 1.25em;
+    background-repeat: no-repeat;
   }
 }
 
 .banner {
   a.brand {
     display: inline-block;
+    margin-bottom: 1em;
     width: 15%;
 
     img {
