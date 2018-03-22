@@ -8,7 +8,7 @@
     return;
   @endphp
 
-  <div class="grid">
+  <div class="grid grid--collapse">
     <div>
       <ul class="first quarter left">
         <?php dynamic_sidebar( 'first-footer-widget-area' ); ?>

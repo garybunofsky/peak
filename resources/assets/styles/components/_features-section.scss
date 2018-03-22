@@ -1,19 +1,27 @@
 .features-section {
-  padding: 8em 0 6em 0;
-
-  img {
-    height: auto;
-    margin-bottom: 0.75em;
-    width: 24px;
-  }
+  padding: 10em 0 8em 0;
 
   h4 {
-    color: $blue--500;
     font-weight: 700;
     margin-bottom: 0.25em;
   }
 
   p {
     color: $gray--500;
+  }
+
+  .icon-box {
+    display: table;
+
+    .icon-box-cell {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    img {
+      height: auto;
+      margin: 0.75em;
+      width: 48px;
+    }
   }
 }

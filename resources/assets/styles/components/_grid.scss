@@ -15,11 +15,11 @@
 }
 
 .grid--collapse {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 @media screen and (min-width: 992px) {
   .grid--collapse {
-    flex-direction: row;
+    flex-direction: row !important;
   }
 }
