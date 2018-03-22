@@ -18,4 +18,28 @@
   &--light {
     font-weight: 400;
   }
+
+  &--xl {
+    @include font-size(36);
+  }
+
+  &--lg {
+    @include font-size(27);
+  }
+
+  &--md {
+    @include font-size(24);
+  }
+
+  &--sm {
+    @include font-size(22);
+  }
+
+  &--xsm {
+    @include font-size(18);
+  }
+
+  &--xxsm {
+    @include font-size(18);
+  }
 }
