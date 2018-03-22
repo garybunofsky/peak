@@ -7,7 +7,6 @@
   @include('partials.homepage-header')
   @include('partials.features-section')
   @include('partials.photo-section')
-  @include('partials.callout-section')
   @while(have_posts()) @php(the_post())
     @include('partials.content-page')
 
