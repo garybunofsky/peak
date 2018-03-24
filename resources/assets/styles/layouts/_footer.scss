@@ -15,8 +15,14 @@ footer {
     }
   }
 
+  h5 {
+    color: $white;
+    font-weight: 700;
+  }
+
   ul {
     list-style: none;
+    margin-left: 0;
 
     li {
       line-height: 1.75em;

@@ -8,7 +8,7 @@
   @include('partials.features-section')
   @include('partials.photo-section')
   @while(have_posts()) @php(the_post())
-    @include('partials.content-page')
+    @include('partials.content-page-homepage')
   @endwhile
   @include('partials.form-section')
 @endsection

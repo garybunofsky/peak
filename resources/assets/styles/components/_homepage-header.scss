@@ -29,12 +29,14 @@
   }
 
   h1 {
+    color: $white;
     font-weight: 700;
   }
 
   h2 {
     @include font-size(27);
 
+    color: $white;
     line-height: 1.25em;
   }
 
