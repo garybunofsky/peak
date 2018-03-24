@@ -39,15 +39,17 @@
   }
 
   .form-box {
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 1em;
+    form {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 1em;
 
-    input {
-      margin-bottom: 0.75em;
+      input {
+        margin-bottom: 0.75em;
+      }
     }
   }
 }
@@ -59,15 +61,24 @@
     }
 
     .form-box {
-      flex-direction: row;
+      form {
+        flex-direction: row;
+        justify-content: space-between;
 
-      input {
-        flex: 68%;
-        margin: 0 2% 0 0;
-      }
+        input {
+          margin-bottom: 0;
+        }
 
-      button {
-        flex: 29%;
+        .wpcf7-form-control-wrap {
+          flex: 70%;
+          margin: 0;
+          padding: 0;
+        }
+
+        input[type='submit'] {
+          flex: 1;
+          margin: 0 -4% 0 2%;
+        }
       }
     }
   }

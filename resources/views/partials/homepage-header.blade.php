@@ -4,8 +4,7 @@
     <h1>{!! App::title() !!}</h1>
     <h2><?php the_field('subheading') ?></h2>
     <div class="form-box">
-      <input type="text" name="" value="" placeholder="Your Email Address">
-      <button class="button button--blue form-control large" type="button" name="button">Get a Quote </button>
+      <?php echo do_shortcode('[contact-form-7 id="85" title="Homepage Header"]') ?>
     </div>
   </div>
 </div>
