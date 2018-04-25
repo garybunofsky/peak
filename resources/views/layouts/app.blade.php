@@ -17,7 +17,7 @@
       </div>
     </div>
     @php(do_action('get_footer'))
-    @include('partials.footer')
+    @include('partials.footer-form')
     @php(wp_footer())
   </body>
 </html>

@@ -10,5 +10,4 @@
   @while(have_posts()) @php(the_post())
     @include('partials.content-page-homepage')
   @endwhile
-  @include('partials.form-section')
 @endsection
