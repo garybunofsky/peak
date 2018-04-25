@@ -28,8 +28,8 @@ button,
 }
 
 .button--white:hover {
-  color: $blue--500;
-  opacity: 0.8;
+  background: $blue--300;
+  color: $white;
 }
 
 .button--blue {
