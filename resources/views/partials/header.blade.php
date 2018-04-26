@@ -1,6 +1,6 @@
 <header class="banner">
   <a class="brand" href="{{ home_url('/') }}">
-    <img alt="Peak Dry Ice Blasting" src="/wp-content/uploads/2018/03/peak-logo-1.png">
+    <img alt="Peak Dry Ice Blasting" src="<?= get_template_directory_uri(); ?>/../dist/images/peak-dry-ice-blasting.png">
   </a>
   <nav class="nav-primary navbar navbar-expand-lg">
     <button class="ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
