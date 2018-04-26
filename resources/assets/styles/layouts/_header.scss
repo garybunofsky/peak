@@ -8,7 +8,7 @@
 
 .navbar {
   margin-top: -5.5em;
-  padding: 0.5rem 0 0 0;
+  padding: 0;
 
   .navbar-toggler {
     color: $white;
@@ -16,7 +16,7 @@
   }
 
   .navbar-collapse {
-    margin-top: 1em;
+    margin-top: 2em;
   }
 
   .navbar-toggler-icon {
@@ -28,6 +28,12 @@
 
 .banner {
   min-height: 5em;
+  position: fixed;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(0, 0, 0, 0.1);
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
 
   a.brand {
     display: inline-block;
@@ -56,13 +62,14 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 0 0 2px rgba(0, 0, 0, 0.1);
 
         li {
           a {
             background: $blue--600;
             color: $white;
             font-weight: 500;
-            padding: 1rem 0.5rem;
+            padding: 0.5rem;
             text-align: center;
 
             &:hover {
@@ -78,6 +85,8 @@
 
 @media all and (min-width: 992px) {
   .banner {
+    box-shadow: none;
+
     a.brand {
       display: block;
       text-align: center;
@@ -87,6 +96,10 @@
 
     .navbar {
       margin-top: 0;
+
+      .navbar-collapse {
+        margin-top: 0;
+      }
     }
 
     nav.nav-primary {
