@@ -32,8 +32,9 @@
   a.brand {
     display: inline-block;
     margin-bottom: 1em;
-    width: 15%;
     max-height: 88px;
+    padding: 0.5em 0.25em 0.25em 0.25em;
+    width: 100%;
 
     img {
       height: auto;
@@ -82,10 +83,6 @@
       text-align: center;
       margin: 0 auto;
       width: 100%;
-
-      img {
-        margin: -1.25em 0;
-      }
     }
 
     .navbar {
