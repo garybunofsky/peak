@@ -6,6 +6,7 @@
   display: flex;
   height: 100%;
   justify-content: center;
+  margin: 64px 0 0 0;
   max-height: 600px;
   min-height: 512px;
   padding: 40px 50px;
@@ -45,7 +46,7 @@
 
 @media all and (min-width: 992px) {
   .subpage-header {
-    margin: 124px 0 0 0;
+    margin: 64px 0 0 0;
 
     .subpage-content {
       width: 50%;

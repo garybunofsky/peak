@@ -85,17 +85,21 @@
 @media all and (min-width: 992px) {
   .banner {
     box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 
     a.brand {
       display: flex;
       text-align: center;
-      margin: 0 auto;
-      width: 100%;
-      align-items: flex-start;
+      width: 10%;
+      align-items: center;
+      justify-content: center;
     }
 
     .navbar {
       margin-top: 0;
+      width: 80%;
 
       .navbar-collapse {
         margin-top: 0;
@@ -104,11 +108,25 @@
 
     nav.nav-primary {
       .menu-primary-navigation-container {
+        background: $white;
+
         ul {
           flex-direction: row;
+          box-shadow: none;
 
           li {
             flex: 1;
+
+            a {
+              color: $gray--500;
+              font-weight: 400;
+              background: $white;
+
+              &:hover {
+                background: $white;
+                color: $blue--500;
+              }
+            }
 
             .sub-menu {
               display: none;

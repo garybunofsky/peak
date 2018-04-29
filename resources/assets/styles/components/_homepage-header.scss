@@ -5,6 +5,7 @@
   display: flex;
   height: 100%;
   justify-content: center;
+  margin: 64px 0 0 0;
   max-height: 700px;
   min-height: 512px;
   padding: 40px 50px;
@@ -48,9 +49,38 @@
       flex-direction: column;
       margin: 0 auto;
       padding: 1em;
+      flex-wrap: wrap;
 
-      input {
-        margin-bottom: 0.75em;
+      .button {
+        margin-bottom: 0;
+      }
+
+      .ajax-loader {
+        height: 0;
+      }
+
+      .wpcf7-mail-sent-ok {
+        background: #82be40;
+        border: 1px solid #82be40;
+        border-radius: 4px;
+        color: #fff;
+        padding: 0.75em 1em;
+        margin: 1em 0 0 0;
+      }
+
+      .wpcf7-validation-errors {
+        background: #ff6464;
+        border: 1px solid #ff6464;
+        border-radius: 4px;
+        color: #fff;
+        padding: 0.75em 1em;
+        margin: 1em 0 0 0;
+      }
+
+      .wpcf7-not-valid-tip {
+        color: #ff6464;
+        text-align: left;
+        margin: 0.5em 0 0 0;
       }
     }
   }
@@ -58,8 +88,6 @@
 
 @media all and (min-width: 992px) {
   .homepage-header {
-    margin: 124px 0 0 0;
-
     .header-content {
       width: 50%;
     }

@@ -1,5 +1,5 @@
 .features-section {
-  padding: 10em 0 8em 0;
+  padding: 8em 0 4em 0;
 
   h4 {
     font-weight: 700;
@@ -7,15 +7,12 @@
   }
 
   .icon-box {
-    .icon-box-cell {
-      display: table-cell;
-      vertical-align: middle;
-    }
+    margin-bottom: 4em;
 
     img {
-      height: auto;
+      min-height: 32px;
       margin: 0.75em;
-      width: 48px;
+      width: auto;
     }
   }
 }
