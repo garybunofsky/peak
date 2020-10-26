@@ -126,6 +126,7 @@ array_map(
 );
 
 add_action( 'widgets_init', 'footer_init' );
+add_filter('wpcf7_autop_or_not', '__return_false');
 Container::getInstance()
     ->bindIf('config', function () {
         return new Config([
